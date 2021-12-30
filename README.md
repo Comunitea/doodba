@@ -1,10 +1,6 @@
 # [Doodba](https://hub.docker.com/r/tecnativa/doodba)
 
-![ci](https://github.com/Tecnativa/doodba/workflows/ci/badge.svg)
-[![](https://images.microbadger.com/badges/version/tecnativa/doodba:latest.svg)](https://microbadger.com/images/tecnativa/doodba:latest "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/tecnativa/doodba:latest.svg)](https://microbadger.com/images/tecnativa/doodba:latest "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/commit/tecnativa/doodba:latest.svg)](https://microbadger.com/images/tecnativa/doodba:latest "Get your own commit badge on microbadger.com")
-[![](https://images.microbadger.com/badges/license/tecnativa/doodba.svg)](https://microbadger.com/images/tecnativa/doodba "Get your own license badge on microbadger.com")
+[![ci](https://github.com/Comunitea/doodba/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/Comunitea/doodba/actions/workflows/ci.yaml)
 
 **Doodba** stands for **Do**cker **Od**oo **Ba**se, and it is a highly opinionated image
 ready to put [Odoo](https://www.odoo.com) inside it, but **without Odoo**.
