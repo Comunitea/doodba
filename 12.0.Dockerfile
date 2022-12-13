@@ -52,6 +52,7 @@ RUN apt-get -qq update \
         zlibc \
         apt-transport-https \
         ca-certificates \
+    && echo '------------------ VA A DESCARGAR ---------------------'  \    
     && echo 'deb https://apt-archive.postgresql.org/pub/repos/apt stretch-pgdg main' >> /etc/apt/sources.list.d/postgresql.list \
     && curl -SL https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - \
     && curl https://bootstrap.pypa.io/pip/3.5/get-pip.py | python3 /dev/stdin \
