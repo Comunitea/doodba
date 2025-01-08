@@ -43,7 +43,7 @@ RUN apt-get update \
     && apt-get -f install -yqq
 
 # Special case to get latest PostgreSQL client in 250-postgres-client
-RUN echo 'deb https://apt.postgresql.org/pub/repos/apt buster-pgdg main' >> /etc/apt/sources.list.d/postgresql.list \
+RUN echo 'deb https://apt-archive.postgresql.org/pub/repos/apt buster-pgdg main' >> /etc/apt/sources.list.d/postgresql.list \
 && curl -SL https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - \
 && apt update
 
@@ -64,10 +64,10 @@ RUN curl https://bootstrap.pypa.io/pip/2.7/get-pip.py | python /dev/stdin \
 RUN npm install -g less@2 less-plugin-clean-css@1 \
     && rm -Rf ~/.npm /tmp/*
 
-# Special case to get bootstrap-sass, required by Odoo for Sass assets
-RUN gem install --no-rdoc --no-ri --no-update-sources autoprefixer-rails --version '<9.8.6' \
-    && gem install --no-rdoc --no-ri --no-update-sources bootstrap-sass --version '<3.4' \
-    && rm -Rf ~/.gem /var/lib/gems/*/cache/
+# # Special case to get bootstrap-sass, required by Odoo for Sass assets
+# RUN gem install --no-rdoc --no-ri --no-update-sources autoprefixer-rails --version '<9.8.6' \
+#     && gem install --no-rdoc --no-ri --no-update-sources bootstrap-sass --version '<3.4' \
+#     && rm -Rf ~/.gem /var/lib/gems/*/cache/
 
 # Other facilities
 WORKDIR /opt/odoo
